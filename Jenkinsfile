@@ -1,5 +1,5 @@
 @library('shared_lib')
- stage('demo') (
+stage('demo') {
     echo 'hello alex'
-    shared_library
-)
+    shared_library()
+}
