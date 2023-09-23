@@ -1,10 +1,5 @@
-pipeline {
-    agent any 
-    stages {
-        stage('build') {
-            steps {
-                sh 'echo fady'
-            }
-        }
-    }
-}
+@Library('pipeline-library-demo')_
+ stage('Demo') {
+     echo 'Hello world'
+     sayHello 'Alex'
+ }
