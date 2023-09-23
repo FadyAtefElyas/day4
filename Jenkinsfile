@@ -1,5 +1,5 @@
-@library('shared_lib')
+@library('sharedliberary')
  stage('demo') {
     echo 'hello alex'
-    shared_library()
+    sayhello 'fady'
 }
