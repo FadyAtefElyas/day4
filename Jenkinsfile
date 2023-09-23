@@ -1,5 +1,10 @@
-@library('sharedliberary')
- stage('demo') {
-    echo 'hello alex'
-    sayhello 'fady'
+pipeline {
+    agent { any }
+    stages {
+        stage('build') {
+            steps {
+                sh 'mvn --version'
+            }
+        }
+    }
 }
